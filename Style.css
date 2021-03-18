@@ -1,0 +1,266 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+/*********Start Row*****************/
+.row {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.col-left {
+  background-color: #002a4e;
+  padding: 30px;
+}
+
+.col-left .log img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.log {
+  width: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.log p:first-of-type {
+  text-transform: uppercase;
+  color: #1b7d9b;
+}
+
+.log p:nth-of-type(2) {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  margin-top: 5px;
+  color: #143958;
+}
+
+.search {
+  width: 91%;
+  background-color: #fff;
+  padding: 8px;
+  margin-top: 30%;
+  border-radius: 20px;
+  display: flex;
+}
+
+.search img {
+  width: 20px;
+  height: 21px;
+  object-fit: cover;
+}
+
+.search input {
+  width: 90%;
+  padding: 3px 0px;
+  border: none;
+  outline: none;
+  text-indent: 10px;
+  color: #888;
+  text-transform: capitalize;
+}
+
+.search input::placeholder {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: capitalize;
+}
+
+.list {
+  margin-top: 40px;
+  list-style-type: none;
+}
+
+.list li {
+  text-transform: uppercase;
+  color: #374855;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.list li:first-of-type {
+  width: 2px;
+  height: 200px;
+  background-color: #374855;
+}
+
+.list li:not(.list li:first-of-type) {
+  margin-top: 20px;
+}
+
+.col-right {
+  padding: 30px;
+ 
+}
+
+.col-right .link {
+  width: 55%;
+  display: flex;
+  list-style-type: none;
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.col-right .link li {
+  text-transform: uppercase;
+
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.col-right .link li:first-of-type {
+  border-bottom: 1px #fff solid;
+}
+
+.col-right .link li:hover {
+  border-bottom-color: #fff;
+}
+.generation {
+  width: 100%;
+  height: 100%;
+  background-image: url("./Image/Rebot.PNG");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 25px;
+}
+.generation-content {
+  width: 50%;
+  padding-top: 16px;
+}
+.generation-content h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 4rem;
+}
+.generation-tools {
+  width: 51%;
+  height: 120px;
+  text-align: right;
+  list-style-type: none;
+  position: relative;
+  top: 25%;
+}
+.generation-tools li {
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: right;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.generation-tools li img {
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+.generation-tools li:first-of-type {
+  left: 57%;
+}
+.generation-tools li:nth-of-type(2) {
+  top: 50px;
+  left: 60%;
+}
+.generation-tools li:last-of-type {
+  top: 90px;
+  left: 67%;
+}
+.last {
+  position: relative;
+  top: 45%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.range {
+  color: #fff;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.range p{
+    display: block;
+    border-bottom: 1px solid #fff;
+   flex-basis: 10%;
+   font-family:'Times New Roman', Times, serif
+}
+.range p:first-of-type{
+    border-width: 4px;
+    font-size: 1.5rem;
+}
+.range p:nth-of-type(2){
+    font-size: 1.3rem;
+}
+.range p:nth-of-type(3){
+    font-size: 1.1rem;
+}
+.range p:nth-of-type(4){
+    font-size: .9rem;
+}
+.range p:nth-of-type(5){
+    font-size: .7rem;
+}
+.sound{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.Faly{
+    position: absolute;
+    top:20%;
+    right: 15px;
+    
+}
+.Faly h1{
+    color:#374855;
+    font-size: 8rem;
+    text-transform: uppercase;
+    opacity: 0.3;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top:8%;
+    right: 75%;
+    border: 25px solid #374855;
+    border-radius: 50%;
+}
+.small_Cursor{
+    width: 10px;
+    height: 10px;
+    background-color: #3fc9f5;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    z-index: 100;
+}
+.large_Cursor{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid #3fc9f5;
+    position: absolute;
+    display: none;
+    z-index: 100;
+}

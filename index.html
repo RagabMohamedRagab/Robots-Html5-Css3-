@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width ,initial-scale=1'>
+    <meta name='description' content='Rebot'>
+    <meta name='keyword' content='Html5-Css3'>
+    <link rel="stylesheet" href="Style.css">
+    <title>Website Using Html And Css</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class='col-left'>
+            <div class="log">
+                <img src="./Image/Logo.PNG" alt="Logo">
+                <div>
+                    <p>robogenix</p>
+                    <p>next generation</p>
+                </div>
+            </div>
+            <div class="search">
+                <img src="./Image/Icon_Search.PNG" alt="Search...">
+                <input type="text" placeholder="search...">
+            </div>
+            <ul class='list'>
+                <li></li>
+                <li>production</li>
+                <li>facility</li>
+                <li>mechanism</li>
+                <li>our team</li>
+                <li>our ideas</li>
+
+            </ul>
+        </div>
+        <div class="col-right">
+            <ul class='link'>
+                <li>home</li>
+                <li>about</li>
+                <li>technology</li>
+                <li>products</li>
+            </ul>
+            <div class="generation">
+                <div class="generation-content">
+                    <h1>the next <br> generation </h1>
+                </div>
+                <ul class="generation-tools">
+                    <li><span>watch reviwe</span> <img src="./Image/video.PNG" alt="Video"></li>
+                    <li><span>the marking</span> <img src="./Image/setting.PNG" alt="Setting"></li>
+                    <li><span>dowload</span> <img src="./Image/download.PNG" alt="Download"></li>
+                </ul>
+                <div class="last">
+                    <div class='range'>
+                        <p>01</p>
+                        <p>02</p>
+                        <p>03</p>
+                        <p>04</p>
+                        <p>05</p>
+                    </div>
+                    <div class='sound'>
+                        <img src="./Image/Sound.PNG" alt="Sound">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='Faly'>
+        <h1 class='text'>robotics</h1>
+        <div class='circle'></div>
+    </div>
+    <div class="small_Cursor"></div>
+    <div class="large_Cursor"></div>
+    <script>
+        let Small=document.querySelector('.small_Cursor'),
+        Large=document.querySelector('.large_Cursor');
+        document.onmousemove=function(e){
+            Small.style.left=(e.pageX-5)+"px";
+            Small.style.top=(e.pageY-5)+"px";
+            Small.style.display='block';
+            Large.style.left=(e.pageX-22)+"px";
+            Large.style.top=(e.pageY-22)+"px";
+            Large.style.display='block';
+        }
+    </script>
+</body>
+
+</html>
